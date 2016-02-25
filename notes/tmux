@@ -1,0 +1,19 @@
+
+======================
+tmux
+======================
+
+tmux ls
+
+tmux new-session -s testing
+tmux kill-session -t name
+tmux attach -t testing
+
+rails c production
+or RAILS_ENV=production rails c
+
+cntr-b d  : detaches a tmux session
+
+
+exit : exit from ssh
+

@@ -1,0 +1,28 @@
+<div>
+    <h1>Validation Unsuccessful</h1>
+    <h2>Following category mapping(s) not present in the current DB</h2>
+    <table class="table table-bordered" border='1'>
+        <thead>
+            <tr>
+                <th>Row Number</th>
+                <th>Parent Category</th>
+                <th>Sub Category</th>
+            </tr>
+        </thead>
+        <tbody class="preview">
+            <% @result.each do |r| %>
+                <tr>
+                    <td>
+                        <%= r[0]%>
+                    </td>
+                    <td>
+                        <%= r[1]%>
+                    </td>
+                    <td>
+                        <%= r[2]%>
+                    </td>
+                </tr>
+                <% end %>
+        </tbody>
+    </table>
+</div>

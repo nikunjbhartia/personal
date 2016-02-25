@@ -1,0 +1,40 @@
+<%- model_class = MasterCategoryMapping -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:third_level_id) %></th>
+      <th><%= model_class.human_attribute_name(:revised_second_level_id) %></th>
+      <th><%= model_class.human_attribute_name(:current_second_level_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @master_category_mappings.each do |master_category_mapping| %>
+      <tr>
+        <td><%= link_to master_category_mapping.id, master_category_mapping_path(master_category_mapping) %></td>
+        <td><%= master_category_mapping.third_level_id %></td>
+        <td><%= master_category_mapping.revised_second_level_id %></td>
+        <td><%= master_category_mapping.current_second_level_id %></td>
+        <td><%=l master_category_mapping.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_master_category_mapping_path(master_category_mapping), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      master_category_mapping_path(master_category_mapping),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_master_category_mapping_path,
+            :class => 'btn btn-primary' %>

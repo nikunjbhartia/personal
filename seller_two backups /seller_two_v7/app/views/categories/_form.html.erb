@@ -1,0 +1,20 @@
+<%= simple_form_for @category, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :cat_picture %>
+  <%= error_span(@category[:cat_picture]) %>
+  <%= f.input :name %>
+  <%= error_span(@category[:name]) %>
+  <%= f.input :order_no %>
+  <%= error_span(@category[:order_no]) %>
+  <%= f.input :parent_id %>
+  <%= error_span(@category[:parent_id]) %>
+  <%= f.input :status %>
+  <%= error_span(@category[:status]) %>
+  <%= f.input :category_type %>
+  <%= error_span(@category[:category_type]) %>
+  <%= f.input :old_name %>
+  <%= error_span(@category[:old_name]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                categories_path, :class => 'btn btn-default' %>
+<% end %>

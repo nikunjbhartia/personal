@@ -1,0 +1,39 @@
+
+http://viveksoni.net/intalling-spring-tool-suites-in-ubuntu/
+
+
+We are going to install sts in /opt directory
+
+
+1
+cd /opt
+ 
+
+Step 2:
+
+Now download the tar.gz file you can find new versions from https://spring.io/tools/sts/all
+
+
+1
+wget http://download.springsource.com/release/STS/3.6.3/dist/e4.4/spring-tool-suite-3.6.3.RELEASE-e4.4.1-linux-gtk-x86_64.tar.gz
+ 
+
+Step 3:
+
+Now extract this tar.gz file
+
+
+1
+sudo tar -xvf spring-tool-suite-3.6.3.RELEASE-e4.4.1-linux-gtk-x86_64.tar.gz
+ 
+
+Step 4:
+
+Now it will create this directory /opt/sts-bundle/sts-3.6.3.RELEASE so we will create symlink to /opt/sts-bundle/sts-3.6.3.RELEASE/STS in /usr/local/bin/sts
+
+
+1
+ln -s /opt/sts-bundle/sts-3.6.3.RELEASE/STS /usr/local/bin/sts
+ 
+
+All done you can now run STS by typing “sts” anywhere in shell.

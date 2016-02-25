@@ -1,0 +1,59 @@
+<h1 style="color: red">Bad File Input</h1>
+<br/>
+<div class="row col-xs-12" style="color:brown">
+    <p>Input File should be of .xls format and should contain specific headers</p>
+    <p>An Example is shown below :-</p>
+</div>
+<table class="table table-striped" border='1'>
+    <thead>
+        <tr>
+            <th>three_level_l0</th>
+            <th>three_level_l1</th>
+            <th>three_level_l2</th>
+            <th>revised_two_level_l0</th>
+            <th>revised_two_level_l1</th>
+            <th>current_l0</th>
+            <th>current_l1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Art, Craft & Collectibles</td>
+            <td>Others</td>
+            <td></td>
+            <td>Art, Craft & Collectibles</td>
+            <td>Others</td>
+            <td>Art, Craft & Collectibles</td>
+            <td>Coins & Stamps</td>
+        </tr>
+        <tr>
+            <td>Bags & Luggag</td>
+            <td>Wallets </td>
+            <td>Men's Wallets</td>
+            <td>Bags & Luggage</td>
+            <td>Wallets</td>
+            <td>Fashion Accessories</td>
+            <td>Belts & Wallets</td>
+        </tr>
+        <tr>
+            <td>Beauty, Health & Gourmet</td>
+            <td>Others</td>
+            <td></td>
+            <td>Beauty, Health & Personal Care</td>
+            <td>Others</td>
+            <td>Beauty & cosmetics</td>
+            <td>Others</td>
+        </tr>
+        <tr>
+            <td>Books & Stationery</td>
+            <td>School Supplies</td>
+            <td></td>
+            <td>Books & Stationery</td>
+            <td>School Supplies </td>
+            <td>Books & Stationery</td>
+            <td>School Supplies</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<%= button_to('Retry Validation', validate_path, :class => 'btn btn-large btn-primary', method: 'get')  %>

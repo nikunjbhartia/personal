@@ -1,0 +1,41 @@
+http://askubuntu.com/questions/128369/sudo-apt-get-update-error-on-ubuntu-12-04
+
+
+
+
+Something I always try to do whenever I am updating Ubuntu 12.04 packages is make sure I will be downloading them from the closest/best mirror/server.
+
+    Begin by launching the software center.
+
+    Select edit from the menu bar, then select Software Sources. ..
+
+Software Center Edit Menu
+
+    Click the drop down arrow for the Download From options.
+
+Package Sources download options
+
+    Choose other.
+
+other download server
+
+    Click "Select Best Server."
+
+Selecting Best download server ubuntu 12.04
+
+    Software center will now perform a series of tests to find the best mirror for your location.
+
+Finding Closest Server
+
+Source: http://www.ubuntulinuxguide.com/sudo-apt-get-update-error-slow-mirror-ubuntu-12-04/
+shareimprove this answer
+	
+edited Aug 10 '14 at 19:35
+
+	
+answered Mar 8 '13 at 13:07
+Troubled Ubuntu
+18019
+	
+add a comment
+

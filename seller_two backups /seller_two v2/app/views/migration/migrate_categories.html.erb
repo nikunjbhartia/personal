@@ -1,0 +1,8 @@
+<div>
+    <h1>Migration successful</h1>
+    <div>
+        <%= form_tag("/migration/delete", remote: "true") do %>
+            <%=submit_tag 'Delete Migrations',{name: "upload_numbers",class: "btn-sm btn-warning", id: "upload_numbers"} %>
+                <% end %>
+    </div>
+</div>

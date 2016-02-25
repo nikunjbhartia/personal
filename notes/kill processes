@@ -1,0 +1,10 @@
+ps aux | grep process name   --> gives a list of aall processes with the mentioned name 
+
+the use kill -9 pid to kill the process
+
+or use 
+
+pkill -f processname    --> this kill all the process with that name 
+
+
+

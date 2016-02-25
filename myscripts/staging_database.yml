@@ -1,0 +1,82 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: treasureProduct
+  pool: 25
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+staging:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: treasureProduct
+  pool: 25
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 15.0.0.139
+  local_infile: true
+
+admin:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: sellerdata
+  pool: 250
+  username: root
+  password: sellerdata
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: treasureProduct
+  pool: 25
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 15.0.0.139
+  local_infile: true
+
+user_staging: &user_production
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: accounts
+  pool: 25
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 15.0.0.139
+  local_infile: true
+
+offer_staging: &offer_production
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: offers
+  pool: 25
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 15.0.0.139
+  local_infile: true
+
+chat_staging: &chat_production
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: shopo_chats
+  pool: 25
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 15.0.0.139
+  local_infile: true
+
+chat_production:
+  <<: *chat_production
+offer_production:
+  <<: *offer_production
+user_production:
+  <<: *user_production
+

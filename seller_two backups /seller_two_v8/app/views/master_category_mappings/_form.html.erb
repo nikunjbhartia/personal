@@ -1,0 +1,12 @@
+<%= simple_form_for @master_category_mapping, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :third_level_id %>
+  <%= error_span(@master_category_mapping[:third_level_id]) %>
+  <%= f.input :revised_second_level_id %>
+  <%= error_span(@master_category_mapping[:revised_second_level_id]) %>
+  <%= f.input :current_second_level_id %>
+  <%= error_span(@master_category_mapping[:current_second_level_id]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                master_category_mappings_path, :class => 'btn btn-default' %>
+<% end %>

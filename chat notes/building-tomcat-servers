@@ -1,0 +1,42 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-14-04
+
+
+1)Copy tomcat8 file from the net and save in /opt/ folder
+2)persion changes  : sudo chown nikunj:nikunj -R tomcat8/
+3)cp -r tomcat8 tomcat-search
+4)cp -r tomcat8 tomcat-gateway
+5)cp -r tomcat8 tomcat-notificcations
+6)cp -r tomcat8 tomcat-chats
+7)cp -r tomcat8 tomcat-offers
+8)cp -r tomcat8 tomcat-accounts
+
+
+likewse
+9) in each tomcat server , set the conf/server.xml file from the server
+   in this we are setting th tomcat port acording to the codes
+   each should be different
+
+10)Set the CLASSPATH=/opt/configutation/chat   in a new file bin/setenv.sh
+for tomcat-chat server 
+    the configuration files have the app.properties and database.properties as taken from the server and set according to my local
+
+11)whenever we build a subsystem , we get a ROOT.war file in the target folder of the maven project,
+therefore we have to symlink this ROOT.war with the tomcat server
+
+   we have a setting in the server.xml where we define the path of th ROOT.war folder ... .in this case : tomcat-chat/webapps/Chat/
+
+  Therefore we have to create a new direcotry names Chat inn the webapps foder fo tomcat-chat directory.
+
+mkdir tomcat-chat/webapps/Chat
+
+12) now symlink ROOT.war
+     sudo ln -s ~/Documents/shopo/Chat/target/ROOT.war /opt/tomcat-chat/webapps/Chat/
+
+13) mvn clean install all the clients first and then the subsystem.
+
+14) ./opt/tomcat-chat/bin/catalina.sh start  --> to start the system
+15)tail -f /opt/tomcat-chat/logs/catalina.out --> to find the logs of the spring projects
+
+16)Note : run the kafka and zookeepers first , then clean and install the clients the nsubsystem , the run the accounts first and then the chat i flow , then we can expect correct result.
+
+

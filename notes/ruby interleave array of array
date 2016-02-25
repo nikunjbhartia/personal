@@ -1,0 +1,4 @@
+  # Interleaving the array of product arrays
+      max_arr = result.max_by(&:length)
+      result -= [max_arr]
+      max_arr.zip(*result).flatten.compact

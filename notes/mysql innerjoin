@@ -1,0 +1,3 @@
+SELECT p1.name, p1.sex, p2.name, p2.sex, p1.species
+    -> FROM pet AS p1 INNER JOIN pet AS p2
+    ->   ON p1.species = p2.species AND p1.sex = 'f' AND p2.sex = 'm';

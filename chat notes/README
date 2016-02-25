@@ -1,0 +1,13 @@
+erlc -I ~/ejabberd-15.04/lib/ejabberd-15.04/include -DNO_EXT_LIB -pa ~/ejabberd-15.04/lib/ejabberd-15.04/ebin mod_intercept.erl
+
+erlc -I ~/ejabberd-15.04/lib/ejabberd-15.04/include -DNO_EXT_LIB -pa ~/ejabberd-15.04/lib/ejabberd-15.04/ebin mod_kafka_producer.erl
+
+
+erlc -I ~/ejabberd-15.04/lib/ejabberd-15.04/include -DNO_EXT_LIB -pa ~/ejabberd-15.04/lib/ejabberd-15.04/ebin mod_log_chat_mysql5.erl
+
+erlc -I ~/ejabberd-15.04/lib/ejabberd-15.04/include -DNO_EXT_LIB -pa ~/ejabberd-15.04/lib/ejabberd-15.04/ebin mod_offline_kafka.erl
+
+erlc -I ~/ejabberd-15.04/lib/ejabberd-15.04/include -DNO_EXT_LIB -pa ~/ejabberd-15.04/lib/ejabberd-15.04/ebin mod_rest.erl
+
+
+

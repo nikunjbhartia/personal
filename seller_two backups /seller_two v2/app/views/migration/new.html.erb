@@ -1,0 +1,7 @@
+<%= form_tag("migrate_categories", remote: "true") do %>
+    <h1>
+     <%=submit_tag 'Migrate',{name: "upload_numbers",class: "btn-sm btn-warning", id: "upload_numbers"} %>
+     <%= hidden_field(:file, :name, :value => params[:filename]) %> 
+     </h1>
+     
+<% end %>

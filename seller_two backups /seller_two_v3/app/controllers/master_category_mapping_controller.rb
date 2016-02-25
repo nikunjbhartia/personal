@@ -1,0 +1,2 @@
+class MasterCategoryMappingController < ApplicationController
+end

@@ -1,0 +1,6 @@
+sudo ln -s executableFlePath /usr/local/bin/app-name
+
+
+this is symlinking 
+we can run the application by tyoing app-name in the shell
+

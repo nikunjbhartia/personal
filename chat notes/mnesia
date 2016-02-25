@@ -1,0 +1,5 @@
+
+just use command ejabberdctl debug
+
+mnesia:info(). %to overview mnesia 
+mnesia:schema(schema). %see table named schema`s detail

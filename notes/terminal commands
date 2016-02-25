@@ -1,0 +1,7 @@
+1)find $HOME -type d -name 'httpdocs'  : finding a directory recursively in all home directory
+2)find $HOME -name '*.jpg'
+3)ps aux | grep psname    : displays all the process cintaining the search substing psname
+4)pkill -ce chrom   : kills all chrome
+5) kill -9 pid  : kills process with process id = pid
+6)pkill -f ejabberd : kills allthe process conting ejabberd as name 
+

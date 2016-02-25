@@ -1,0 +1,16 @@
+Calling a namespaced class with Rails constantize inflector 
+http://stackoverflow.com/questions/9800520/calling-a-namespaced-class-with-rails-constantize-inflector
+
+
+You can make your life easier by just using the string of the class name and doing
+
+Something.const_get(args[:my_class_name]).new
+Here's a simplified version (normal IRB, no Rails):
+
+module Something ; end
+class Something::MyClass ; end
+my_class_name = "MyClass"
+Something.const_get(my_class_name).new 
+#=> #<Something::MyClass:0x007fa8c4122dd8>
+
+

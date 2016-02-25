@@ -1,0 +1,4 @@
+mv /etc/ppp /etc/ppp_old  
+
+if vpn showss unmet dependencies :
+sudo aptitude install ia32-libs-gtk

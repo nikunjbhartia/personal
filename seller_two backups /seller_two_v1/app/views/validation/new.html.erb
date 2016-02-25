@@ -1,0 +1,16 @@
+<%= form_tag("validate_categories", remote: "true") do %>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Browse File</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row well" >
+  <div class="col-xs-4 text-right">
+    <%= file_field_tag(:xls_file, :multiple => false) %>
+  </div>
+  <div class="col-xs-6 text-left">
+    <%=submit_tag 'Validate',{name: "upload_numbers",class: "btn-sm btn-warning", id: "upload_numbers"} %>
+  </div>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+require 'faraday'
+
+conn = Faraday.new(:url => 'http://captcha.quikr.com/cg_js/ajaxCity.php?r=0.6747898619310855') do |c|
+  c.use Faraday::Request::UrlEncoded  # encode request params as "www-form-urlencoded"
+  c.use Faraday::Response::Logger     # log request & response to STDOUT
+  c.use Faraday::Adapter::NetHttp     # perform requests with Net::HTTP
+end
+
+conn.post {cityid:"30"}
+
+
+
+require "uri"
+require "net/http"
+
+params = {cityid=>'30'}
+
+x = Net::HTTP.post_form(URI.parse('http://delhi.quikr.com/post-classifieds-ads/?aj=1&aj_getLocality=true'), params)
+puts x.
+
+
+conn = Faraday.new 'http://captcha.quikr.com/cg_js/ajaxCity.php?r=0.6747898619310855' do |builder|
+  builder.use FaradayMiddleware::OAuth2, 'TOKEN'
+  builder.use FaradayMiddleware::EncodeJson
+
+  builder.use FaradayMiddleware::ParseXml,  :content_type => /\bxml$/
+  builder.use FaradayMiddleware::ParseJson, :content_type => /\bjson$/
+
+  builder.use FaradayMiddleware::Instrumentation
+  builder.adapter Faraday.default_adapter
+end
+
+cities=conn.get
+
+
+
+http://captcha.quikr.com/cg_js/ajaxCity.php?r=0.6747898619310855
+http://www.quikr.com/post-classifieds-ads/?postadcategoryid=1388
+

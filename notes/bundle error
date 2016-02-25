@@ -1,0 +1,25 @@
+NOKOGIRI problem :-
+
+bundle config build.nokogiri --use-system-libraries
+
+now run bundle
+========================
+
+
+Msql problem :-
+
+sudo apt-get install libmysql-ruby libmysqlclient-dev
+
+now run bundle
+
+==============================
+
+
+sqllite3 error
+
+You need the SQLite3 development headers for the gem’s native extension to compile against. You can install them by running (possibly with sudo):
+
+apt-get install libsqlite3-dev
+
+now run bundle 
+============================

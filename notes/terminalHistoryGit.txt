@@ -1,0 +1,820 @@
+    1  cd..
+    2  cd ..
+    3  cd /etc/apt/sources.list.d
+    4  pwd
+    5  cd ..
+    6  cd /etc/apt/sources.list.d
+    7  echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+    8  sudo apt-get update
+    9  apt-get install ia32-libs
+   10  sudo apt-get install ia32-libs
+   11  cd /etc/apt/sources.list.d
+   12  echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+   13  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+   14  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" > ia32-libs-raring.list
+   15  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" 
+   16  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" > ia32-libs-raring.list
+   17  ls
+   18  ls -l
+   19  ls -la
+   20  touch a
+   21  sudo touch a
+   22  ls
+   23  rm a
+   24  sudo rm a
+   25  touch ia32-libs-raring.list
+   26  sudo touch ia32-libs-raring.list
+   27  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" > ia32-libs-raring.list
+   28  ls
+   29  exit
+   30  sudo apt-get update
+   31  sudo apt-get install curl
+   32  \curl -L https://get.rvm.io | bash -s stable --ruby
+   33  rvm get stable --autolibs=enable
+   34  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+   35  command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+   36  \curl -L https://get.rvm.io | bash -s stable --ruby
+   37  rvm install ruby
+   38  rvm get stable --autolibs=enable
+   39  source /home/nikunj/.rvm/scripts/rvm
+   40  rvm
+   41  rvm install ruby
+   42  rvm --default use ruby-2.2.2
+   43  rvm install ruby-2.2.2
+   44  sudo apt-get install nodejs
+   45  gem -v
+   46  gem update --system
+   47  rvm gemset list
+   48  rvm gemset use global
+   49  gem list
+   50  gem update
+   51  gem install bundler
+   52  gem install nokogiri
+   53  rvm use ruby-2.2.2@rails4.2 --create
+   54  gem install rails
+   55  rails -v
+   56  gem install rails
+   57  rake -T
+   58  rails new
+   59  gem install rails
+   60  rails new .
+   61  rake -T
+   62  bundle install
+   63  git clone https://github.com/martmobi/seller
+   64  sudo apt-get install git
+   65  git clone https://github.com/martmobi/seller
+   66  bundle
+   67  bundle exec rails console
+   68  pwd
+   69  cd seller
+   70  rails c
+   71  bundle
+   72  rails c
+   73  bundle install
+   74  cd ..
+   75  gem install mysql2 -v '0.3.18'
+   76  bundle install
+   77  seller
+   78  cd seller
+   79  rails c
+   80  bundle install
+   81  rails c
+   82  cd ..
+   83  bundle install
+   84  rails c
+   85  seller
+   86  cd seller
+   87  rails c
+   88  bundle install
+   89  sudo apt-get install libmysqlclient-dev
+   90  cd ..
+   91  sudo apt-get install libmysqlclient-dev
+   92  cd seller
+   93  bundle
+   94  rails c
+   95  cd seller
+   96  rails c
+   97  cd /etc/apt/sources.list.d
+   98  su 
+   99  cd /etc/apt/sources.list.d
+  100  su
+  101  su root
+  102  man us
+  103  man su
+  104  su -l
+  105  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+  106  sudo bash
+  107  sudo echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" > ia32-libs-raring.list
+  108  ls
+  109  vim ia32-libs-raring.list 
+  110  vi ia32-libs-raring.list 
+  111  sudo apt-get update
+  112  sudo apt-get install ia32-libs
+  113  cd seller
+  114  rails c
+  115  bundle
+  116  rails
+  117  rail
+  118  cd ..
+  119  pw
+  120  pwd
+  121  cd /
+  122  cd /home
+  123  ls
+  124  cd nikunj/
+  125  ls
+  126  cd seller/
+  127  rails
+  128  rails c
+  129  ruby --version
+  130  sudo apt-get install ruby
+  131  rails
+  132  rails c
+  133  rvm use 2.0.0p481
+  134  exit
+  135  cd seller
+  136  bundle
+  137  rails c
+  138  bundle install
+  139  cd ~
+  140  bundle install
+  141  ls
+  142  cd seller/
+  143  rails s
+  144  gem
+  145  gem -h/ --hellp
+  146  gem -h/ --help
+  147  gem help commands   
+  148  fethc
+  149  fetch 
+  150  update
+  151  gem update 
+  152  chmod -777
+  153  bundle install
+  154  gem build package.gemspec
+  155  bundle 
+  156  ruby -v
+  157  rvm --version
+  158  rvm --default use 2.0.0p481
+  159  rvm use 2.0.0p481
+  160  rvm 2.0.0p481
+  161  rvm --help
+  162  rvm use 2.0.0p481
+  163  sudo bash
+  164  rvm use 2.0.0p481
+  165  exit
+  166  rvm use 2.0.0p481
+  167  rvm install ruby-2.0.0p481
+  168  rvm install ruby-2.0.0
+  169  ruby -v
+  170  cd seller/
+  171  rails s
+  172  bundle 
+  173  /home/nikunj/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/
+  174  cd /home/nikunj/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/
+  175  ls
+  176  gedit rubygems.rb
+  177  cd ~
+  178  cd seller/
+  179  rails s
+  180  bundle
+  181  cd /home/nikunj/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/
+  182  nano rubygems.rb
+  183  cd ~
+  184  ls
+  185  cd irbrc
+  186  grep -rl "irbrc"
+  187  grep -rl "irbrc" *
+  188  cd seller/
+  189  ls
+  190  nano Gemfile
+  191  bundle install
+  192  bundle 
+  193  rails c
+  194  clear
+  195  history
+  196  cd /home/nikunj/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/
+  197  gedit rubygems.rb
+  198  quit
+  199  clear
+  200  history
+  201  cd ~
+  202  cd seller
+  203  rails c
+  204  grep -r require Crawlers *
+  205  grep -r "require Crawlers" *
+  206  grep -L "require Crawlers" *  
+  207  grep -rl "require Crawlers" *  
+  208  grep -rl "require" *  
+  209  grep -rl "Crawlers" *  
+  210  grep -rl "Base" *  
+  211  grep -rl "Crawlers" *  
+  212  gedit app/classes/crawlers/base.rb
+  213  Crawlers::Base.new
+  214  cd app
+  215  ls
+  216  grep -rl "Crawlers" *  
+  217  cd Classes
+  218  cd ..
+  219  rails c
+  220  grep -rl varni *
+  221  grep -rl varni*.yml *
+  222  Crawlers::Base.new
+  223  rails c
+  224  cd ..
+  225  grep -rl varni *
+  226  cd seller
+  227  git branch
+  228  cd ..
+  229  git checkout -b seller_new
+  230  git checkout -b seller
+  231  git
+  232  git push origin seller
+  233  git b
+  234  git branch 
+  235  cd ~
+  236  cd seller/
+  237  git branch 
+  238  git status 
+  239  git branch 
+  240  git branch varni
+  241  git branch 
+  242  git checkout varni 
+  243  git branch 
+  244  git merge master 
+  245  git status 
+  246  git add config/patterns/varnifabrics_pattern.yml 
+  247  git commit -m 'added varnifabrics_pattern.yml'
+  248  git comit -m 'added varnifabrics_pattern.yml'
+  249  git commit -m 'added varnifabrics_pattern.yml'
+  250  cd ~
+  251  ls -al ~/.ssh
+  252  ssh-keygen -t rsa -b 4096 -C "nikunj.bhartia@snapdeal.com"
+  253  eval "$(ssh-agent -s)
+  254  eval "$(ssh-agent -s)"
+  255  ssh-add ~/.ssh/id_rsa
+  256  cat ~/.ssh/id_rsa.pub 
+  257  cd seller/
+  258  git branch 
+  259  git status 
+  260  git commit -m 'varni yml file added'
+  261  ls -al ~/.ssh
+  262  pbcopy id_rsa.pub
+  263  cat ~/.ssh/id_rsa.pub
+  264  git commit -m 'varni yml file added'
+  265  git config --global user.email "nikunj.bhartia@snapdeal.com"
+  266  git config --global user.name "nikunjbhartia0"
+  267  git commit -m 'varni yml file added'
+  268  git push origin varni
+  269  git pull origin master
+  270  cd .
+  271  cd ..
+  272  ls
+  273  rm seller/
+  274  ls
+  275  git clone git@github.com:martmobi/seller.git
+  276  git branch 
+  277  ls
+  278  cd seller/
+  279  git branch 
+  280  git pull origin varni 
+  281  git branch 
+  282  git blame
+  283  git branch -a
+  284  git checkout spams
+  285  git branch
+  286  grep -rl Crawlers
+  287  app/classes/crawlers/base.rb
+  288  cd  app/classes/crawlers/base.rb
+  289  cd app
+  290  cd classes/
+  291  cd crawlers/
+  292  gedit base.rb
+  293  cd ~
+  294  grep -rl ApiWriter * 
+  295  cd seller/lib/api_writer.rb
+  296  cd /seller/lib/api_writer.rb
+  297  cd /seller/lib
+  298  cd seller/lib
+  299  ls
+  300  gedit api_writer.rb 
+  301  uname -m
+  302  cd ~
+  303  wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3047_i386.deb
+  304  cd seller/
+  305  git branch 
+  306  git checkout master
+  307  git branch 
+  308  grep -rl "endpoint" *
+  309  obj=Crawlers::Base.new
+  310  rails c
+  311  cd  ~
+  312  cd sellers
+  313  cd seller
+  314  grep -rl varni *
+  315  cd ..
+  316  bundle install
+  317  clear
+  318  rails generate devise_install
+  319  bundle install
+  320  rails generate devise_install
+  321  rails generate devise User
+  322  clear
+  323  rails generate devise User
+  324  rails generate devise_install
+  325  rails generate --help
+  326  rails generator --help
+  327  rails generate devise_install
+  328  rails generate a
+  329  rails generate 
+  330  ls
+  331  cd seller/
+  332  ls
+  333  rails c
+  334  free
+  335  top
+  336  pkill firefox
+  337  firefox
+  338  cd seller
+  339  rails c
+  340  git branch
+  341  git --help
+  342  git create /?
+  343  git branch --help
+  344  git branch varni
+  345  git branch
+  346  git checkout varni
+  347  git branch
+  348  git merge masster
+  349  git merge master
+  350  branch
+  351  git branch
+  352  hisotry
+  353  history
+  354  hostory
+  355  history
+  356  rails c
+  357  cd seller
+  358  rails c
+  359  clear
+  360  rails c
+  361  shutdown
+  362  quit
+  363  exit
+  364  cd seller
+  365  rails c
+  366  ls
+  367  cd seller/
+  368  ls
+  369  rails c
+  370  git.methods
+  371  cd ..
+  372  git branch
+  373  cd seller
+  374  git branch
+  375  git checkout --hel[pp
+  376  git checkout master
+  377  git branch Tiles
+  378  git checkout Tiles
+  379  git branch
+  380  git merge master
+  381  git commit
+  382  git merge varni
+  383  git commit
+  384  git merge master
+  385  git merge varni
+  386  git commit
+  387  git commit --help
+  388  gst
+  389  git status
+  390  pwd
+  391  git branch
+  392  git status
+  393  git add app/controllers/tiles_controller.rb 
+  394  git status
+  395  git commit -m "tiles slicer for n number of tiles"
+  396  git push
+  397  git push --set-upstream origin Tiles
+  398  cd..
+  399  cd ..
+  400  sudo -i
+  401  cd nikunj
+  402  ls
+  403  cd Downloads
+  404  ls
+  405  cd forticlient/
+  406  ls
+  407  ./forticlientsslvpn
+  408  apt-get install mysql-server-5.6
+  409  sudo apt-get install mysql-server-5.6
+  410  mysql -uroot -p
+  411  cd
+  412  cd seller/
+  413  ls
+  414  vim
+  415  vi config/database.yml 
+  416  rake db:create RAILS_ENV=admin
+  417  rake db:migrate RAILS_ENV=admin
+  418  rails s
+  419  top
+  420  sudo apt-get install redis
+  421  sudo apt-get install redis-server
+  422  redis
+  423  redis-server
+  424  bundle exec sidekiq
+  425  rails c
+  426  clear
+  427  cd selller
+  428  rails c
+  429  cd seller
+  430  rails c
+  431  grep Crawlers
+  432  grep Crawlers *
+  433  cd app
+  434  ls
+  435  cd controllers/
+  436  ls
+  437  cd ..
+  438  rails c
+  439  git branch
+  440  cd seller
+  441  git branch
+  442  git branch quikrLocalities
+  443  git branch
+  444  git checkout quikrLocalities 
+  445  git merge masster
+  446  git merge master
+  447  git status
+  448  git branch
+  449  rails cc
+  450  rails c
+  451  top
+  452  rails c
+  453  clear
+  454  cd seller
+  455  rails c
+  456  touch myfile.txt
+  457  rails c
+  458  cd ..
+  459  cd Demo
+  460  ls
+  461  touch locality
+  462  rails c
+  463  cd seller
+  464  railss c
+  465  rails c
+  466  cd ..
+  467  cd desmo
+  468  cd Desmo
+  469  cd Demo
+  470  ls
+  471  rails c
+  472  cd ..
+  473  cd seller
+  474  ls
+  475  touch Demo
+  476  ls
+  477  cd Quikr/
+  478  rails c
+  479  cd ..
+  480  Post:
+  481  conn = Faraday.new(:url => 'http://www.quikr.com') do |faraday|
+  482  end
+  483  response=conn.post '/post-classifieds-ads/?aj=1&aj_getLocality=true', { :cityname => 'Kolkata' 
+  484  response
+  485  response=conn.post '/post-classifieds-ads/?aj=1&aj_getLocality=true', { :cityname => 'Kolkata' }
+  486  Post:
+  487  conn = Faraday.new(:url => 'http://www.quikr.com') do |faraday|
+  488  end
+  489  response=conn.post '/post-classifieds-ads/?aj=1&aj_getLocality=true', { :cityname => 'Kolkata' }
+  490  rails c
+  491  grep -rl 'index1x1' *
+  492  find . | grep index | less
+  493  grep -rl '1x1' *
+  494  grep -rl 'tiles_sizing' *
+  495  irb
+  496  cd ~
+  497  ls
+  498  git clone git@github.com:martmobi/scripts.git 
+  499  ls
+  500  cd Demo
+  501  rails c
+  502  cd ~
+  503  rails new demo
+  504  cd ~
+  505  cd Documents/
+  506  rails new demo
+  507  cd ~
+  508  cd ~
+  509  ls
+  510  cd Desktop/
+  511  rails new example
+  512  rails s
+  513  rails
+  514  cd ~
+  515  rails new example
+  516  ls
+  517  cd opt
+  518  cd app/
+  519  ls
+  520  cd ~
+  521  ls
+  522  cd demorails
+  523  rails new example
+  524  cd ~
+  525  ls
+  526  rails new try
+  527  cd try
+  528  bundle install
+  529  rails c
+  530  cd ..
+  531  git clone scripts
+  532  git clone git@github.com:martmobi/scripts.git
+  533  git branch quikr_city_area
+  534  ls
+  535  cd scripts/
+  536  git branch quikr_city_area
+  537  git branch
+  538  git checkout quikr_city_area 
+  539  git branch
+  540  git merge master
+  541  git status
+  542  git add quikrCrawler.rb 
+  543  git commit -m "Quikr city are crawler added"
+  544  git push origin quikr_city_area 
+  545  cd ..
+  546  cd try
+  547  rails c
+  548  cd seller
+  549  grep -rl 'varni' *
+  550  cd ..
+  551  grep -rl 'varni' *
+  552  cd seller
+  553  rails c
+  554  obj=Crawlers::Base.new("salwardunia","https://salwardunia.com/salwar-kameez?page=",726,130,"kolkata",77)
+  555  obj=Crawlers::Base.new("salwardunia","https://salwardunia.com/New-Arrivals?page=",726,130,"kolkata",127)
+  556  rails c
+  557  obj=Crawlers::Base.new("salwardunia","https://salwardunia.com/salwar-kameez?page=",726,130,"kolkata",77)
+  558  obj.crawl
+  559  rails c
+  560  rails
+  561  rails c
+  562  obj=Crawlers::Base.new("salwardunia","https://salwardunia.com/Kurtis-online?page=",726,130,"kolkata",0)
+  563  obj.crawl
+  564  rails c
+  565  clear
+  566  rails c
+  567  grep -l 'Crawl_Error_log1'
+  568  grep -l 'Crawl_Error_log1' *
+  569  grep -rl 'Crawl_Error_log1' *
+  570  grep  'Crawl_Error_log1' *
+  571  grep  --help
+  572  find --help
+  573  find .'Crawl_Error_log1'
+  574  find .'Crawl_Error_log'
+  575  find --help
+  576  clear
+  577  find --help
+  578  rails c
+  579  rails cc
+  580  railc c
+  581  rails c
+  582  git branch
+  583  git branch salwarDuniaCrawler
+  584  git checkout salwarDuniaCrawler 
+  585  git branch
+  586  git merge master
+  587  git status
+  588  git add doc/
+  589  git add config/patterns/salwardunia_pattern.yml 
+  590  git status
+  591  git add app/classes/crawlers/base.rb 
+  592  git status
+  593  git commit -m "Salwar Dunia Crawler Added"
+  594  git push
+  595  git branch
+  596  rails c
+  597  cd ..
+  598  cd seller
+  599  git pull master
+  600  git branch
+  601  git checout master
+  602  git checkout master
+  603  git branch
+  604  gti pull master
+  605  git pull master
+  606  git branch
+  607  git pull
+  608  git b 
+  609  git branch 
+  610  git status
+  611  git stash
+  612  git pull 
+  613  git status
+  614  git status 
+  615  git blame
+  616  git log
+  617  git branch
+  618  rails c
+  619  ls
+  620  cd seller/
+  621  ls
+  622  cd doc
+  623  mkdir doc
+  624  cd
+  625  cd -
+  626  cd doc/
+  627  cd seller/
+  628  rails c
+  629  obj.inject(0){|acc,e| acc+e}
+  630  obj.inject[0]{|acc,e| acc+e}
+  631  inject --help
+  632  obj
+  633  onbj=0..10
+  634  obj0..10
+  635  obj=0..10
+  636  obj.inject(0){|acc,e| acc+e}
+  637  obj.inject[0]{|acc,e| acc+e}
+  638  obj.inject(0) {|acc,e| acc+e }
+  639  history
+  640  history --help
+  641  history -anrw history.txt
+  642  history -w history.txt
+  643  rails c
+  644  git branch
+  645  git checkout quikrLocalities 
+  646  git status
+  647  git branch efficient_tile_slicer
+  648  git branch
+  649  git checkout efficient_tile_slicer 
+  650  git merge master
+  651  git branch
+  652  git status
+  653  git add app/classes/crawlers/base.rb 
+  654  git add app/controllers/tiles_controller.rb 
+  655  git commit -m "tile_slicer method changed and Crawler_error_log file modified"
+  656  git push
+  657  git push --set-upstream origin efficient_tile_slicer
+  658  git status
+  659  git branch
+  660  git checkout quikrLocalities 
+  661  grep -rl 'quikr' *
+  662  git branch
+  663  git status
+  664  grep -rl 'quikr' *
+  665  grep -rl 'areA' *
+  666  grep -rl 'crawl' *
+  667  grep -rl 'cities' *
+  668  git branch
+  669  git checkout master
+  670  git branch
+  671  grep -rl 'class Cloudinary' *
+  672  grep -rl 'Cloudinary' *
+  673  grep -rl 'Uploader' *
+  674  grep -rl 'Cloudinary' *
+  675  grep --help
+  676  grep -rlH 'Cloudinary' *
+  677  grep -rH 'Cloudinary' *
+  678  grep -H 'Cloudinary' *
+  679  grep -rH 'Cloudinary' *
+  680  grep -rH '1x1' *
+  681  grep -rH 'index1x1' *
+  682  grep -rH 'index' *
+  683  grep --help
+  684  grep -rHo 'index' *
+  685  grep -rHo '1x1' *
+  686  grep -rHo 'Cloudinary' *
+  687  grep -rH 'Cloudinary' *
+  688  grep --help
+  689  grep -rH 'Cloudinary' *
+  690  clear
+  691  grep -rH 'Cloudinary' *
+  692  cd ..
+  693  grep -rH 'Cloudinary' *
+  694  clear
+  695  grep -rH 'Cloudinary' *
+  696  clear
+  697  grep -rH 'Cloudinary' *
+  698  grep -rH 'cloudinary' *
+  699  grep -rHi 'cloudinary' *
+  700  grep --help
+  701  cd seller
+  702  grep -Hir 'cloudinary' *
+  703  grep --help
+  704  grep -Hirc 'cloudinary' *
+  705  grep -c 'cloudinary' *
+  706  cd ..
+  707  grep -c 'cloudinary' *
+  708  grep -Hir 'Cloudinary' *
+  709  grep -Hr 'Cloudinary' *
+  710  grep -Hr 'class Cloudinary' *
+  711  grep -Hr 'module Cloudinary' *
+  712  grep -Hr 'cloudinary' *
+  713  cd seller/
+  714  grep -Hr 'cloudinary' *
+  715  grep -Hr 'Cloudinary' *
+  716  find --help
+  717  grep -Hr 'Nikunj' *
+  718  grep -Hr 'nikunj' *
+  719  grep -Hr 'saket' *
+  720  grep -Hr 'Saket' *
+  721  grep -Hri 'Saket' *
+  722  grep -Hr 'self upload' *
+  723  grep -Hr 'upload' *
+  724  grep -Hr 'Uploader' *
+  725  grep -Hr 'def Uploader' *
+  726  grep -Hr 'Uploader' *
+  727  grep -Hr 'upload(' *
+  728  grep -Hr 'def upload' *
+  729  grep -Hri 'def upload' *
+  730  has={}
+  731  has[:key]="key"
+  732  has[:a]="key"
+  733  has[:a]=>"key"
+  734  rails c
+  735  grep -rl 'fetch_response' *
+  736  grep -rl 'fetch_response_body' *
+  737  rails c
+  738  grep -rl 'ENDPOINT_DOMAIN' *
+  739  rails c
+  740  git clone git://github.com/astrails/dotvim.git
+  741  ln -sfn dotvim .vim
+  742  ln -sfn dotvim/vimrc .vimrc
+  743  cd .vim; make install
+  744  exit
+  745  quit
+  746  vim
+  747  cd ..
+  748  clear
+  749  cd vim
+  750  vim
+  751  cd seller
+  752  git reset --soft HEAD~1
+  753  git status
+  754  git diff doc/salwarDunia_crawler_scripts.rb
+  755  git add doc/salwarDunia_crawler_scripts.rb
+  756  git status
+  757  git log
+  758  git status
+  759  git branch
+  760  git checkout efficient_tile_slicer 
+  761  git branch new_tile_slicer
+  762  git checkout new_tile_slicer 
+  763  git status 
+  764  git commit -m "tile slicer method and salwarDunia scripts modified" 
+  765  git push
+  766  git push --set-upstream origin new_tile_slicer
+  767  git status
+  768  git branch -a
+  769  git pull salwarDuniaCrawler
+  770  git branch
+  771  git status
+  772  git diff Gemfile.lock
+  773  git co Gemfile.lock
+  774  git checkout Gemfile.lock
+  775  git status
+  776  git branch
+  777  git checkout salwarDuniaCrawler
+  778  git log
+  779  git status
+  780  git log
+  781  git branch
+  782  git checkout new_tile_slicer
+  783  git log
+  784  git branch
+  785  git checkout salwarDuniaCrawler 
+  786  git log
+  787  git checkout new_tile_slicer 
+  788  git log
+  789  git branch
+  790  git checkout salwarDuniaCrawler 
+  791  git merge new_tile_slicer 
+  792  git status
+  793  git diff app/controllers/tiles_controller.rb
+  794  vim app/controllers/tiles_controller.rb
+  795  git status
+  796  git diff config/patterns/varnifabrics_pattern.yml
+  797  vim config/patterns/varnifabrics_pattern.yml 
+  798  vim doc/salwarDunia_crawler_scripts.rb
+  799  git status
+  800  git add app/controllers/tiles_controller.rb config/patterns/varnifabrics_pattern.yml doc/salwarDunia_crawler_scripts.rb
+  801  git commit 
+  802  git log
+  803  git branch
+  804  git log
+  805  git branch
+  806  git co new_tile_slicer
+  807  git checkout new_tile_slicer
+  808  git log
+  809  git branch
+  810  git checkout salwarDuniaCrawler 
+  811  git push origin salwarDuniaCrawler 
+  812  ls
+  813  cat config/deploy/staging.rb 
+  814  cat config/deploy/production.rb 
+  815  rails c production
+  816  vim config/database.yml 
+  817  history
+  818  program1 >outputfile.txt 2>errorfile.txt
+  819  cd ..
+  820  history > terminalHistoryGit.txt

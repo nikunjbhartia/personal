@@ -1,0 +1,144 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+#
+# Install the MYSQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem 'mysql2'
+#
+# And be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: treasureProduct
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+admin:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: sellerdata
+  pool: 8
+  username: root
+  password: password
+
+staging:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: treasureProduct
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+user_staging:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: shopo_chats
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+
+chat_staging:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: shopo_chats
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+offer_staging:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: offers
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+
+chat_development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: shopo_chats
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+offer_development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: offers
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: organizortest
+  pool: 8
+  username: root
+  password: password
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: treasureProduct
+  pool: 8
+  username: shopo_ruby
+  password: Sh0p0@5721#
+  host: 16.0.1.195
+  local_infile: true
+
+user_development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: accounts
+  pool: 8
+  username: root
+  password: 123tre@$ureShopo.456
+  host: 52.74.132.72
+  local_infile: true
+
+user_production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: accounts
+  pool: 8
+  username: shopo_ruby
+  password: Sh0p0@5721#
+  host: 16.0.1.195
+  local_infile: true
+  

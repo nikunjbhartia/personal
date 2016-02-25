@@ -1,0 +1,4 @@
+find $HOME -type d -name 'httpdocs'  : finding a directory recursively in all home directory
+find $HOME -name '*.jpg'
+
+

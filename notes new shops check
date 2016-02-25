@@ -1,0 +1,31 @@
+b = User.joins(:products).where("users.created_at > ?",@from_date.map{|u| u if !u.score.nil? and u.score.score>50 and u.products.map{|p| p if p.status == 'ACTIVE'}.size > 0 }.compact
+
+a = Product.joins(:user,:score).where("users.created_at > ? and score > ?",@from_date,@min_score).select("distinct products.user_id").shuffle
+
+b = User.joins(:products,:score).where("users.created_at > ? and score > ?",@from_date,@min_score).shuffle
+
+
+c=[]
+new_users = User.joins(:score).where("users.created_at > ? and score > ?",@from_date,@min_score)
+new_user.each do |u|
+  c << Product.where("status like 'ACTIVE' and user_id = ? ",u.id).sample(@new_shop_sample)
+end
+
+b=[]
+User.joins(:products,:score).where("users.created_at > ? and score > ?",@from_date,@min_score).uniq.shuffle.each do |u|
+   b << Product.where("user_id = ? and status like 'ACTIVE'",u.id).sample(@new_shop_sample)
+end
+
+a=[]
+Product.joins(:user,:score).where("users.created_at > ? and score > ? ",@from_date,@min_score).select("distinct products.user_id").shuffle.each do |p|
+     a << Product.where("user_id = ? and status like 'ACTIVE'",p.user_id).sample(@new_shop_sample)
+end
+
+
+
+result = []
+     
+      Product.joins(:user,:score).where("users.created_at > ? and score > ? and products.status like 'ACTIVE'",@from_date,@min_score).select("distinct products.user_id").each do |p|
+        result << Product.where("user_id = ?",p.user_id).sample(@new_shop_sample)
+      end
+

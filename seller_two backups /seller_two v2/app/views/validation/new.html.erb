@@ -1,0 +1,17 @@
+<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<%= form_tag("validate_categories", remote: "true") do %>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Browse File</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="row col-xs-12">
+        <div class="col-xs-6 text-right">
+            <%= file_field_tag(:xls_file,:enctype => 'multipart/form-data', :multiple => false) %>
+        </div>
+        <div class="col-xs-6 text-left">
+            <%=submit_tag 'Validate',{name: "upload_numbers",class: "btn-sm btn-warning", id: "upload_numbers"} %>
+        </div>
+    </div>
+<% end %>

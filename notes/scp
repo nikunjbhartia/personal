@@ -1,0 +1,26 @@
+From localhost :-
+
+scp deployer@52.74.248.167:/apps/seller/current/ProductsTop100.xls .
+
+
+
+
+
+
+from server:-
+sudo bash
+
+cp filename /home/nb16393
+
+
+then from locahost
+
+scp nb16393@52.74.105.131:/home/nb16393/tomcat-search .
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+ grep -xvFf file2.csv file1.csv > file3.csv
+
+This command use file2.csv line as pattern and print line of file1.csv that doesn't match (-v).
+
+
+we can also skip pasting the file results and just do with 
+
+grep -xvFf file2.csv file1.csv
+
+

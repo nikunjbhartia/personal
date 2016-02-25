@@ -1,0 +1,36 @@
+mv /etc/ppp /etc/ppp_old  
+
+
+
+=============================
+sudo -i
+
+cd /etc/apt/sources.list.d
+
+echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+
+apt-get update
+
+apt-get install ia32-libs
+
+ 
+
+then extract a file which I am sending in mail as an attachment.
+
+Now you need to go to for location of extract file as
+
+#cd /home/username/Download/forticlient then enter
+
+#./forticlient
+
+Then click on agree.
+
+ 
+
+vpn-61.16.237.50
+
+125.63.90.34
+
+Port number : 10443
+
+==================

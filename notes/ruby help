@@ -1,0 +1,7 @@
+http://ruby-doc.org/core-2.2.3/Enumerable.html#method-i-inject
+
+
+Rails.logger.info "text"
+
+
+resp = JSON.parse(response.body) if response.body.include?("{")

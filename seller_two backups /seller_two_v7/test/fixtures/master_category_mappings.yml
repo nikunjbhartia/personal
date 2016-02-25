@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  third_level_id: 1
+  revised_second_level_id: 1
+  current_second_level_id: 1
+
+two:
+  third_level_id: 1
+  revised_second_level_id: 1
+  current_second_level_id: 1

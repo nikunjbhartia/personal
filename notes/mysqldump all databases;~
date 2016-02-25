@@ -1,0 +1,17 @@
+mysqldump -h52.74.132.72 -uroot -p'123tre@$ureShopo.456' --events --ignore-table=mysql.event mysql > stagingdump.sql
+
+USE THISONE :-
+mysqldump --lock-all-tables -h52.74.132.72 -uroot -p'123tre@$ureShopo.456' --events --ignore-table=mysql.event --all-databases > dump.sql
+
+
+mysqldump --lock-all-tables  -uroot -ppassword --events --ignore-table=mysql.event --all-databases > mylocaldump.sql
+
+restore your data
+
+mysql -u root -p < dump.sql
+
+
+
+
+for production : lock table problem fixed:
+mysqldump --single-transaction -ushopo_ruby -h16.0.1.195 -pSh0p0@5721# shopo_chats chats > prod_chats.sql     

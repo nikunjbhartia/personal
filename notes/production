@@ -1,0 +1,178 @@
+ssh deployer@52.74.248.167
+tmux ls
+how to attach a tmux session => tmux a -t <<Session_name>>
+create new session => tmux new-session -s <<session_name>> 
+
+
+rails c production
+
+vim
+:wq
+
+
+
+mina staging deploy
+mina production deploy
+
+
+rails c production
+
+
+
+-----------------------------------
+
+
+
+ mina staging deploy
+ 
+
+mina production deploy
+
+staging ssh : ssh sk15711@52.74.7.19  but no need of ssh to staging 
+
+production ssh: : ssh deployer@52.74.248.167
+
+gosd
+ cd /apps/seller/current
+
+
+======================
+tmux
+======================
+
+tmux -ls
+
+tmux new-session -s testing_senthil
+tmux kill-session -t name
+tmux attach -t testing_senthil
+
+rails c production
+or RAILS_ENV=production rails c
+
+cntr-b d  : detaches a tmux session
+
+
+exit : exit from ssh
+
+
+========================
+check error logs
+=======================
+checking the error logs for the server : tail -f -n100 log/production.log q 
+
+
+
+
+mina staging deploy : deploy in staging
+
+mina staging console : start a console in the staging
+
+mina production deploy : start a console int he production :
+
+
+-------------------------------------
+
+
+when we ewant something to rin during depeloy : 
+change the staging/deploy.rb file and similiary production/deploy.rb file
+
+Note  : we have to specify the path where we are running thhe bash command  . :
+
+
+
+
+
+========================
+mysql :
+mysql -u root -p'123tre@$ureShopo.456' -h 52.74.132.72 treasureProduct
+
+termilnal>mysqldump -u root -p'123tre@$ureShopo.456' -h 52.74.132.72 accounts > acc.sql  
+ : copy the accounts database at the mentioned sql server into a acc.sql dump file
+
+ 
+mysql> source acc.sql     : uses the sql dump and executes the commands . 
+
+
+
+
+terminal >RAILS_ENV=development rake db:migrate
+
+
+
+==========================
+use treasureProduct;
+
+
+
+====================
+get mysql history : cat ~/.mysql_history
+
+
+===============
+scp deployer@52.74.248.167:/apps/seller/current/ProductsTop100.xls .
+
+
+
+
+
+
+
+============Image Size ================
+
+========Method 1==============
+require 'Machanize'
+require 'action_view'
+include ActionView::Helpers::NumberHelper
+uri="http://res.cloudinary.com/dq8ftqelw/image/upload/fl_lossy,q_70,f_auto,e_contrast,e_saturation/v1442911940/5.2MB_ml6dub.jpg"
+ a=Mechanize.new.head(uri)["content-length"].to_i
+ number_to_human_size(a)
+
+ uri="http://res.cloudinary.com/dq8ftqelw/image/upload/fl_lossy,q_60,f_auto,e_contrast,e_saturation/v1442911940/5.2MB_ml6dub.jpg"
+ a=Mechanize.new.head(uri)["content-length"].to_i
+ number_to_human_size(a)
+
+ uri="http://res.cloudinary.com/dq8ftqelw/image/upload/fl_lossy,q_50,f_auto,e_contrast,e_saturation/v1442911940/5.2MB_ml6dub.jpg"
+ a=Mechanize.new.head(uri)["content-length"].to_i
+ number_to_human_size(a)
+
+
+========Method 2==============
+
+ uri="http://res.cloudinary.com/dq8ftqelw/image/upload/fl_lossy,q_70,f_auto,e_contrast,e_saturation/v1442911940/5.2MB_ml6dub.jpg"
+image=MiniMagick::Image.open(uri)
+number_to_human_size(image.size)
+
+
+
+============================ Set user-agent : platform info in mechanize ==========
+
+You can set the user agent from an alias
+
+a = Mechanize.new
+a.user_agent_alias = 'Mac Safari'
+Available aliases are stored in the AGENT_ALIASES constant.
+
+p Mechanize::AGENT_ALIASES
+Otherwise, use #user_agent to set your custom user agent.
+
+a = Mechanize.new
+a.user_agent = 'Custom agent'
+
+
+
+======================Manage sellerdata=================
+SSH TO PRODUCTION
+mysql-uroot -psellerdata
+use sellerdata
+show tables;
+
+
+===================
+tail -f -n100 log/production.log | Unli
+
+
+=====
+rake namespace:function name : to execute the function
+
+
+

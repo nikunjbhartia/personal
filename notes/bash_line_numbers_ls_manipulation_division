@@ -1,0 +1,2 @@
+ls | grep err | while read x;do a=( $(cat "$x" | wc -l) );echo "$x ------- $(expr $a / 5)";done
+

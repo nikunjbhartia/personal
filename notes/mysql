@@ -1,0 +1,79 @@
+whenever you try to understand a sql query.. start with the from, then go to group by, then having, then order, then select
+
+mysql :
+======mysqldump==========
+mysql :
+mysql -u root -p'123tre@$ureShopo.456' -h 52.74.132.72 treasureProduct
+
+termilnal>mysqldump -u root -p'123tre@$ureShopo.456' -h 52.74.132.72 accounts > acc.sql  
+ : copy the accounts database at the mentioned sql server into a acc.sql dump file
+
+ 
+mysql> source acc.sql     : uses the sql dump and executes the commands . 
+
+
+
+
+terminal >RAILS_ENV=development rake db:migrate
+
+============================
+
+
+====start error======
+sudo service mysql stop
+sudo mysqld --skip-grant-tables
+
+=============
+
+
+================
+check the ips and username and paasswords 
+cat shared/config/database.yml 
+================
+
+
+=================
+local
+
+mysql -uroot -psnap@321
+==================
+
+===============
+staging db read(can be done from localhost)
+
+start vpn
+mysql -u root -p'123tre@$ureShopo.456' -h 52.74.132.72
+===============
+
+
+=============
+mina staging ssh
+
+ mysql -uroot -p'123tre@$ureShopo.456' -h15.0.0.139
+
+ Remarks:
+ the ip:15.0.0.139  and the ip:52.74.132.72 belong to the same server the only diff being the the former belongs to the private snapdeal network and the later belongs to the public network.
+=============
+
+
+=============
+mina production ssh(we have to run the following command on the production server)
+
+mysql -ushopo_ruby -h16.0.1.195 -pSh0p0@5721#
+
+
+from the outside world : cant be done.
+===============
+
+
+
+termilnal>mysqldump -u root -p'123tre@$ureShopo.456' -h 52.74.132.72 accounts > acc.sql  
+ : copy the accounts database at the mentioned sql server into a acc.sql dump file
+
+ 
+mysql> source acc.sql     : uses the sql dump and executes the commands . 
+
+
+
+
+terminal >RAILS_ENV=development rake db:migrate

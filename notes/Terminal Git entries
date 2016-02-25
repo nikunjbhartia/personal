@@ -1,0 +1,67 @@
+cd seller
+  752  git reset --soft HEAD~1
+  753  git status
+  754  git diff doc/salwarDunia_crawler_scripts.rb
+  755  git add doc/salwarDunia_crawler_scripts.rb
+  756  git status
+  757  git log
+  758  git status
+  759  git branch
+  760  git checkout efficient_tile_slicer 
+  761  git branch new_tile_slicer
+  762  git checkout new_tile_slicer 
+  763  git status 
+  764  git commit -m "tile slicer method and salwarDunia scripts modified" 
+  765  git push
+  766  git push --set-upstream origin new_tile_slicer
+  767  git status
+  768  git branch -a
+  769  git pull salwarDuniaCrawler
+  770  git branch
+  771  git status
+  772  git diff Gemfile.lock
+  773  git co Gemfile.lock
+  774  git checkout Gemfile.lock
+  775  git status
+  776  git branch
+  777  git checkout salwarDuniaCrawler
+  778  git log
+  779  git status
+  780  git log
+  781  git branch
+  782  git checkout new_tile_slicer
+  783  git log
+  784  git branch
+  785  git checkout salwarDuniaCrawler 
+  786  git log
+  787  git checkout new_tile_slicer 
+  788  git log
+  789  git branch
+  790  git checkout salwarDuniaCrawler 
+  791  git merge new_tile_slicer 
+  792  git status
+  793  git diff app/controllers/tiles_controller.rb
+  794  vim app/controllers/tiles_controller.rb
+  795  git status
+  796  git diff config/patterns/varnifabrics_pattern.yml
+  797  vim config/patterns/varnifabrics_pattern.yml 
+  798  vim doc/salwarDunia_crawler_scripts.rb
+  799  git status
+  800  git add app/controllers/tiles_controller.rb config/patterns/varnifabrics_pattern.yml doc/salwarDunia_crawler_scripts.rb
+  801  git commit 
+  802  git log
+  803  git branch
+  804  git log
+  805  git branch
+  806  git co new_tile_slicer
+  807  git checkout new_tile_slicer
+  808  git log
+  809  git branch
+  810  git checkout salwarDuniaCrawler 
+  811  git push origin salwarDuniaCrawler 
+  812  ls
+  813  cat config/deploy/staging.rb 
+  814  cat config/deploy/production.rb 
+  815  rails c production
+  816  vim config/database.yml 
+

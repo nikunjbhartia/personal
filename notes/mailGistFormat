@@ -1,0 +1,66 @@
+Hi Senthil
+
+PFA the file of cities and areas scraped from Quikr in the following format,
+
+"city_name | area_name"
+
+Here is the gist of the script that Im using,
+
+https://gist.github.com/anonymous/65beb569d578b9b95bab
+
+Leaving the script below,
+
+======================
+
+require 'json'
+require 'faraday'
+
+conn = Faraday.new 'http://captcha.quikr.com/cg_js/ajaxCity.php?r=0.6747898619310855'
+response = conn.get
+str = response.body[33..-3]
+hsh = JSON.parse(str)
+cities = hsh.to_a
+c_size = cities.size
+
+
+open('Locations', 'a') { |f|
+conn = Faraday.new(:url => 'http://www.quikr.com')
+(0..c_size-1).each do |i|
+response = conn.post '/post-classifieds-ads/?aj=1&aj_getLocality=true', { :cityname => cities[i][1]["en"] }
+str = response.body[12..-233]
+if(str[-1] == '}')
+str = str+']'
+end
+localities = JSON.parse(str)
+l_size = localities.size
+if l_size == 0
+f<<(cities[i][1]["en"]+" | Entire "+cities[i][1]["en"]+"\n")
+else
+(0..l_size-1).each do |j|
+f<<(cities[i][1]["en"]+" | "+localities[j]["title"]+"\n")
+end
+end
+end
+}
+
+======================
+2 Attachments
+Preview attachment quikrCrawler.rb
+Preview attachment Locations
+[Binary File]
+Senthil Kumar
+	
+Attachments4:08 PM (29 minutes ago)
+		
+to me, Pramod, Md
+Good Job, Nikunj.
+
+Pramod, 
+
+This is a good list to have. I remember we needing this list when we were @ 91springboard. 
+
+Shashwath,
+
+Here you go. PFA the Locations.txt file with cities and locations names, pipe delimited.
+
+

@@ -1,0 +1,21 @@
+<div>
+	<table class="table table-bordered">
+    	<thead>
+      		<tr>
+            <th>Row Number</th>
+        		<th>Current Parent Category</th>
+        		<th>Current Sub Category</th>
+      		</tr>
+    	</thead>
+    	<tbody class="preview">
+           <% @result.each do |r| %>
+             <tr>
+               <td><%= r[0]%></td>
+               <td><%= r[1]%></td>
+               <td><%= r[2]%></td>
+             </tr>
+           <% end %>
+    	</tbody>
+  </table>
+</div>
+</div>

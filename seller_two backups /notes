@@ -1,0 +1,58 @@
+http://www.jackiejohnston.us/blog/bootstrap-your-app/
+
+http://www.jackiejohnston.us/blog/setting-up-user-authentication-with-devise/
+
+https://github.com/plataformatec/simple_form/wiki/Simple-Form-with-Devise
+
+**  https://github.com/plataformatec/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
+
+
+
+========================================
+ApplicationController in rails is derived from action controller base to set filters and configure things such as request forgery protection that are used in the entire application without explicitly configuring them for each controller
+
+Your controller PublicController is subclassing "ActionController::Base". Controllers other than your ApplicationController need to subclass from ApplicationController in order for their views to be rendered within the application.html.erb layout
+
+If you change
+
+PublicController < ActionController::Base
+to
+
+PublicController < ApplicationController
+it should work.
+
+===============
+ActionController::InvalidAuthenticityToken
+By default, all non-GET actions requires the authenticity token to be passed along with the request. Rails uses the authenticity token to avoid CSRF attacks.
+When you define you own html form then you miss authentication token string that should be sent to controller for security reasons. But when you use rails form helper to generate a form you get something like following
+
+<form accept-charset="UTF-8" action="/login/signin" method="post">
+  <div style="display:none">
+    <input name="utf8" type="hidden" value="&#x2713;">
+    <input name="authenticity_token" type="hidden" 
+      value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=">
+    .
+    .
+    .
+  </div>
+</form>
+So the solution to the problem is either to add authenticity_token field or use rails form helpers rather then removing , downgrading or upgrading rails.
+
+I had the same issue but with pages which were page cached. Pages got buffered with a stale authenticity token and all actions using the methods post/put/delete where recognized as forgery attempts. Error (422 Unprocessable Entity) was returned to the user.
+
+The solution:
+Add:
+
+ skip_before_filter :verify_authenticity_token  
+or as "sagivo" pointed out in Rails 4 add:
+
+ skip_before_action :verify_authenticity_token
+On pages which do caching.
+For example:
+
+ caches_page :index, :show  
+ skip_before_filter :verify_authenticity_token, :only => [:index, :show]
+
+
+
+.

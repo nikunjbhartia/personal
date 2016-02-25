@@ -1,0 +1,10 @@
+1)Clone jiffy
+
+2) move to jiffy folder
+
+3) ./rebar compile
+
+4) copy the beam file in jiffy/ebin to the ejabberd folders/libb/ejabber/ebin folder
+
+5) also copy the jiffy.so file of jiffy/priv folder in /home/nikunj/ejabberd-15.04/lib/ejabberd-15.04/priv
+

@@ -1,0 +1,6 @@
+1) make an erlang hook which listens to all messages sent to the shopo bot
+2) give an http request to a chat bot application (written in any language) with the message
+3) the http request acceptor will give a response based on nlp and send back to the user using mod rest api 
+
+Method 2 :
+if then chat bot makes no http requests and is a stand alone application , then using dgango build an http setup over the app and thn handle the request response stream between the chat bot and he erlang hook with the dgango as the mediator 

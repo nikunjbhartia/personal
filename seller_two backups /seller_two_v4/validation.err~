@@ -1,0 +1,140 @@
+
+=============
+Row 2 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Coins & Stamps
+==============
+
+=============
+Row 3 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Paintings
+==============
+
+=============
+Row 4 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Antiques & Memorabilia
+==============
+
+=============
+Row 5 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Handicrafts
+==============
+
+=============
+Row 6 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Paintings
+==============
+
+=============
+Row 7 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Paintings
+==============
+
+=============
+Row 8 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Antiques & Memorabilia
+==============
+
+=============
+Row 146 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> White goods
+==============
+
+=============
+Row 147 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> TV
+==============
+
+=============
+Row 148 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Others
+==============
+
+=============
+Row 149 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Entertainment
+==============
+
+=============
+Row 150 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Computer & Laptop
+==============
+
+=============
+Row 151 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Cameras
+==============
+
+=============
+Row 152 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Appliances
+==============
+
+=============
+Row 2 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Coins & Stamps
+==============
+
+=============
+Row 3 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Paintings
+==============
+
+=============
+Row 4 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Antiques & Memorabilia
+==============
+
+=============
+Row 5 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Handicrafts
+==============
+
+=============
+Row 6 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Paintings
+==============
+
+=============
+Row 7 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Paintings
+==============
+
+=============
+Row 8 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : Art,Craft & Collectibles -> Antiques & Memorabilia
+==============
+
+=============
+Row 146 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> White goods
+==============
+
+=============
+Row 147 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> TV
+==============
+
+=============
+Row 148 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Others
+==============
+
+=============
+Row 149 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Entertainment
+==============
+
+=============
+Row 150 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Computer & Laptop
+==============
+
+=============
+Row 151 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Cameras
+==============
+
+=============
+Row 152 | /home/nikunj/seller_two/app/classes/validation/validate_categories.rb:18:in `block in validate' | undefined method `id' for nil:NilClass 
+Parent,Sub Category combination not present in db : TVs,Cameras & Appliances -> Appliances
+==============

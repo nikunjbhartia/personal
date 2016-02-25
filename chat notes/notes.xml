@@ -1,0 +1,473 @@
+telnet localhost 5222
+
+* Stream
+  <stream:stream
+    to='localhost'
+    xmlns='jabber:client'
+    xmlns:stream='http://etherx.jabber.org/streams'>
+
+
+<iq id='A2' type='set'>
+ <query xmlns='jabber:iq:auth'>
+   <username>nik1</username>
+   <resource>telnet</resource>
+   <password>123</password>
+ </query>
+</iq><presence/>
+
+<iq id='A2' type='set'>
+ <query xmlns='jabber:iq:auth'>
+   <username>nik2</username>
+   <resource>telnet</resource>
+   <password>123</password>
+ </query>
+</iq><presence/>
+
+<message to='nik2@localhost' id='A33sjdks' from='nik1@localhost/telnet' type='chat'>
+ <body>{"message":"SGk=","message_id":"92233b564-f245-43a3-e50f-710ba319aa9c","actor_id":"2021","message_date":"2015-08-21 16:27:26","type":1,"target_id":"236","product_id":"123"}</body>
+ <version>5</version>
+  <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+
+jiffy:decode(<<"{'foo':'bar'}">>).
+========= presence =======
+ <presence xml:lang='en'>
+  <show>NikTest</show>
+  <status>available</status>
+</presence>
+===========================
+
+* Register
+
+<iq type='set' id='reg1'>
+ <query xmlns='jabber:iq:register'>
+   <username>259</username>
+   <password>259</password>
+ </query>
+</iq>
+
+<iq type='set' id='reg1'>
+ <query xmlns='jabber:iq:register'>
+   <username>harekumar1</username>
+   <password>harekumar1_Shopo</password>
+ </query>
+</iq>
+
+* Login
+
+<iq id='A2' type='set'>
+ <query xmlns='jabber:iq:auth'>
+   <username>nik1</username>
+   <resource>telnet</resource>
+   <password>123</password>
+ </query>
+</iq><presence/>
+
+<iq id='A2' type='set'>
+ <query xmlns='jabber:iq:auth'>
+   <username>nik2</username>
+   <resource>telnet</resource>
+   <password>123</password>
+ </query>
+</iq><presence/>
+
+
+<iq id='A2' type='set'>
+ <query xmlns='jabber:iq:auth'>
+   <username>harekumar</username>
+   <resource>telnet</resource>
+   <password>harekumar_Shopo</password>
+ </query>
+</iq>
+
+<iq from='harekumar@style.local/telnet'
+    to='style.local'
+    type='get'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+<iq from='harekumar@style.local/telnet'
+    to='style.local'
+    type='get'>
+  <query xmlns='http://jabber.org/protocol/disco#info' node='http://jabber.org/protocol/commands'/>
+</iq>
+
+
+* Last seen
+
+<iq from='nik1@localhost/telnet'
+    to='nik2@localhost'
+    type='get'>
+  <query xmlns='jabber:iq:last'/>
+</iq>
+
+<iq from='nik2@localhost/telnet'
+    to='nik1@localhost'
+    type='get'>
+  <query xmlns='jabber:iq:last'/>
+</iq>
+
+<iq from='harekumar@style.local/telnet'
+    to='harekumar123@style.local'
+    type='get'> <query xmlns='jabber:iq:last'/> </iq>
+
+<iq from='harekumar123@style.local/telnet'
+    to='harekumar@style.local'
+    type='get'>
+  <query xmlns='jabber:iq:last'/>
+</iq>
+
+* Roster
+** Get Roster List
+<iq from='nik2@localhost/telnet'
+ id='bv1bs71f'
+ type='get'>
+ <query xmlns='jabber:iq:roster'/>
+</iq>
+
+<iq from='harekumar1@style.local/telnet'
+ id='bv1bs71f'
+ type='get'>
+ <query xmlns='jabber:iq:roster'/>
+</iq>
+
+** Set Roster item
+<iq from='nik2@localhost/telnet'
+ id='rs1'
+ type='set'>
+ <query xmlns='jabber:iq:roster'>
+   <item jid='241@localhost'/>
+ </query>
+</iq>
+
+* Ping
+<iq from='harekumar@style.local/telnet'
+   to='harekumar1@style.local/telnet'
+   type='get'
+   id='e2e1'>
+ <ping xmlns='urn:xmpp:ping'/>
+</iq>
+
+
+1. {"message":"SGk=","message_id":"8183b564-f245-43a3-a50f-710ba319af8c","actor_id":"nik2","message_date":"2015-08-21 16:27:26","type":1,"target_id":"nik1"}
+
+2. {"type":5,"actor_id":"nik2","target_id":"nik1","media_type":1,"media_url":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/f16b3e77-0e37-4afd-9e8f-31696dd62868.jpg","media_thumb_url":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/f16b3e77-0e37-4afd-9e8f-31696dd62868.jpg","message_date":"2015-08-21 16:30:05","message_id":"efee5ab5-98bc-49ee-8235-7069cfb22087"}
+
+3. {"type":2,"target_id":"nik1","actor_id":"nik2","message_date":"2015-08-21 16:30:23","location_latitude":28.5008284,"location_longitude":77.0798798,"message_id":"b5c03dd9-6912-4012-9e84-ee245469cb7c"}
+
+
+4. {"type":4,"target_id":"nik1","actor_id":"nik2","contact_number":"9717667518","message_date":"2015-08-21 16:30:33","message_id":"39f27460-adc1-4f6d-94ca-5bdce67cc3d7"}
+
+5. {"type":6,"target_id":"nik1","actor_id":"nik2","product_id":"8096","product_name":"app test phone app test phone app test t","product_image":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/c_fit,w_560\/1c67d054-7716-4f2c-bf8d-1f7d22d6007d.jpg","product_price":"50000000","message_date":"2015-08-21 16:30:59","message_id":"1312b14e-50cd-41c8-b97e-c930239181fc"}
+
+6. {"target_id":"nik1","actor_id":"nik2","type":3,"offer_type":1,"product_id":"8095","product_name":"app test mobile","product_image":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/c_fit,w_560\/e9268c2f-75d5-4eff-abcb-858b6173c56d.jpg","product_price":"nik200000","offer_id":"7453","offer_price":"50","offer_reason":"","product_userid":"","message_date":"2015-08-21 16:31:25","message_id":"e5eeb887-2b76-4fb8-9fc0-73791da5d664"}
+
+7. {"target_id":"nik1","actor_id":"nik2","type":3,"offer_type":2,"product_id":"8095","product_name":"app test mobile","product_image":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/c_fit,w_560\/e9268c2f-75d5-4eff-abcb-858b6173c56d.jpg","product_price":"nik200000","offer_id":"7454","offer_price":"5000","offer_reason":"","product_userid":"","message_date":"2015-08-21 16:31:43","message_id":"c0baa288-dbce-4118-88d5-9b2152e61f17"}
+
+8. {"target_id":"nik1","actor_id":"nik2","type":7,"offer_id":"7455","order_id":"7455","price":"255","message_date":"2015-08-21 16:32:07","message_id":"b5ad8a3c-4450-4ff7-8154-7189a2e663ae"}
+
+9. {"type":8,"target_id":"nik1","actor_id":"nik2","rating":"3","reasons":"Didn't get a response","offer_id":"7455","message_date":"2015-08-21 16:32:49","message_id":"043109cd-c3a1-4aff-9ddf-1c8be2d278d3"}
+
+****** OLD VERSION ******
+
+  
+
+<message to='nik2@localhost' id='A33sjdks' from='nik1@localhost/telnet' type='chat'>
+ <body>{"buyer_id":"315","message_date":"2015-07-23 17:51:43","isread":1,"type":2,"location_latitude":28.48983711624249,"location_longitude":77.06219110594091,"communication_date":"","actor_id":"304","product_id":3978,"seller_id":"304","adminModRest":"false"}</body>
+</message>
+
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"buyer_id":"315","message_date":"2015-07-23 17:52:44","isread":1,"type":3,"offer_type":1,"offer_price":"125","communication_date":"","actor_id":"304","product_id":3978,"offer_id":7324,"seller_id":"304"}</body>
+</message>
+
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"buyer_id":"315","message_date":"2015-07-23 17:51:16","isread":1,"type":4,"message":"OTcwNTM0NDQ3NQ==","communication_date":"","actor_id":"304","product_id":3978,"seller_id":"304"}</body>
+</message>
+    
+****** OLD VERSION ******
+
+* Message
+** TEXT
+<message to='nik2@localhost' id='A33sjdks' from='nik1@localhost/telnet' type='chat'>
+ <body>{"message":"SGk=","message_id":"92233b564-f245-43a3-e50f-710ba319aa9c","actor_id":"2021","message_date":"2015-08-21 16:27:26","type":1,"target_id":"236","product_id":"123"}</body>
+ <version>5</version>
+  <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+*** Delivery receipt
+<message xmlns="jabber:client" from="2021@localhost/telnet" to="nik1@localhost" lang="en" id="6bqhe-80" type="chat">
+  <received xmlns="urn:xmpp:receipts" id="8183b564-f245-43a3-a50f-710ba319af8c"/>
+</message>
+
+*** Read receipt
+<message xmlns="jabber:client" from="2021@localhost/telnet" to="nik1@localhost" lang="en" id="6bqhe-81">
+  <read xmlns="urn:xmpp:read" id="477"/>
+</message>
+
+**IMAGE
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"type":5,"actor_id":"nik2","target_id":"nik1","media_type":1,"media_url":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/f16b3e77-0e37-4afd-9e8f-31696dd62868.jpg","media_thumb_url":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/f16b3e77-0e37-4afd-9e8f-31696dd62868.jpg","message_date":"2015-08-21 16:30:05","message_id":"efee5ab5-98bc-49ee-8235-7069cfb22097"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+**LOCATION
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"chat_type":2,"target_id":"241","actor_id":"3262","message_date":"2015-09-19 18:46:28","location_latitude":28.6664859,"location_longitude":77.4793347,"page":"chat","type1":"location","message_id":"6cd5aa38-c751-48e7-be27-af664560054d","user_name":"arun"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+** PRODUCT
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"type":6,"target_id":"nik1","actor_id":"nik2","product_id":"8096","product_name":"app test phone app test phone app test t","product_image":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/c_fit,w_560\/1c67d054-7716-4f2c-bf8d-1f7d22d6007d.jpg","product_price":"50000000","message_date":"2015-08-21 16:30:59","message_id":"1312b14e-50cd-41c8-b97e-c930239181fc"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+
+** PHONE
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"type":4,"target_id":"nik1","actor_id":"nik2","contact_number":"9717667518","message_date":"2015-08-21 16:30:33","message_id":"39f27460-adc1-4f6d-94ca-5bdce67cc3d7"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+
+** OFFER NEW ---> failed
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"target_id":"nik1","actor_id":"nik2","type":3,"offer_type":1,"product_id":"8095","product_name":"app test mobile","product_image":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/c_fit,w_560\/e9268c2f-75d5-4eff-abcb-858b6173c56d.jpg","product_price":"nik200000","offer_id":"7453","offer_price":"50","offer_reason":"","product_userid":"","message_date":"2015-08-21 16:31:25","message_id":"e5eeb887-2b76-4fb8-9fc0-73791da5d664"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+** OFFER EDIT -- failed
+"<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"target_id":"nik1","actor_id":"nik2","type":3,"offer_type":2,"product_id":"8095","product_name":"app test mobile","product_image":"http:\/\/res.cloudinary.com\/shopo\/image\/upload\/c_fit,w_560\/e9268c2f-75d5-4eff-abcb-858b6173c56d.jpg","product_price":"nik200000","offer_id":"7454","offer_price":"5000","offer_reason":"some reason","product_userid":"123","message_date":"2015-08-21 16:31:43","message_id":"c0baa288-dbce-4118-88d5-9b2152e61f17"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>"
+
+
+** ACCEPT
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"target_id":"nik1","actor_id":"nik2","type":7,"offer_id":"7455","order_id":"7455","price":"255","message_date":"2015-08-21 16:32:07","message_id":"b5ad8a3c-4450-4ff7-8154-7189a2e663ae"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+
+** RATE
+<message to='nik1@localhost' id='A33sjdks' from='nik2@localhost/telnet' type='chat'>
+ <body>{"type":8,"target_id":"nik1","actor_id":"nik2","rating":"3","reasons":"Didn't get a response","offer_id":"7455","message_date":"2015-08-21 16:32:49","message_id":"043109cd-c3a1-4aff-9ddf-1c8be2d278d3"}</body>
+ <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+
+
+*** Rest api request format for sending message
+<message to="harekumar@style.local" from="harekumar1@style.local"><body>Hello World</body></message>
+
+
+<message to='harekumar1@style.local/telnet' type='chat' id='A33sjdksds' from='nik1@localhost/telnet'>
+ <body>{"buyer_id":"274","type":1,"message":"VGVzdCBUZWxuZXQ=","communication_date":"","actor_id":"274","product_id":"12707","seller_id":"nik1"}</body>
+	<amp xmlns='http://jabber.org/protocol/amp'
+	     status='alert'
+	     from='harekumar1@style.local/telnet'
+	     to='harekumar@style.local/telnet'>
+	  <rule action='alert' condition='deliver' value='stored'/>
+	</amp>
+</message>
+
+
+
+* Discovery
+<iq from='chat.getshopo.com'
+   id='disco1'
+   to='236@chat.getshopo.com'
+   type='get'>
+ <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+
+<iq from='11@chat-staging.getshopo.com/telnet'
+    to='chat-staging.getshopo.com'
+    type='get'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+<iq from='nik2@localhost/telnet'
+    to='localhost'
+    type='get'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+
+<iq from='nik2@localhost/telnet'
+    to='localhost'
+    type='get'>
+  <query xmlns='http://jabber.org/protocol/disco#info'
+         node='http://jabber.org/protocol/amp'/>
+</iq>
+
+
+<message from='nik2@localhost/telnet'
+         to='nik1@localhost/telnet'
+         id='chatty2'>
+  <amp xmlns='http://jabber.org/protocol/amp'
+       status='alert'
+       from='nik1@localhost/telnet'
+       to='nik2@localhost/telnet'>
+    <rule action='alert' condition='deliver' value='stored'/>
+  </amp>
+</message>
+
+<message from='nik2@localhost/telnet'
+         to='nik1@localhost/telnet'
+         id='chatty2'>
+  <amp xmlns='http://jabber.org/protocol/amp'
+       status='notify'
+       from='nik1@localhost/telnet'
+       to='nik2@localhost/telnet'>
+    <rule action='notify' condition='deliver' value='stored'/>
+  </amp>
+</message>
+
+
+<message from='hamlet.lit'
+         to='bernardo@hamlet.lit/elsinore'
+         id='chatty2'>
+  <amp xmlns='http://jabber.org/protocol/amp'
+       status='notify'
+       to='bernardo@hamlet.lit/elsinore'
+       from='francisco@hamlet.lit'>
+    <rule action='notify' condition='deliver' value='stored'/>
+  </amp>
+</message>
+
+
+
+<message
+    from='nik2@localhost/telnet'
+    id='richard2-4.sd1.247'
+    to='nik1@localhost/telnet'>
+  <body>OKKKKK</body>
+  <amp xmlns='http://jabber.org/protocol/amp'
+       per-hop='true'>
+    <rule condition='deliver'
+          action='notify'
+          value='direct'/>
+  </amp>
+</message>
+
+
+<message
+    from='nik2@localhost/telnet'
+    id='1'
+    to='nik1@localhost/telnet'>
+  <body>Yo! Shopo</body>
+  <amp xmlns='http://jabber.org/protocol/amp'>
+    <rule condition='deliver'
+          action='notify'
+          value='stored'/>
+  </amp>
+</message>
+
+
+erlc -I /Applications/ejabberd-15.04/lib/ejabberd-15.04/include -DNO_EXT_LIB -pa /Applications/ejabberd-15.04/lib/ejabberd-15.04/ebin mod_rest.erl
+
+<message type="chat" to="nik1@localhost"><composing xmlns="http://jabber.org/protocol/chatstates"/></message>
+
+<message to="nik1@localhost" from="nik2@localhost/telnet"><read xmlns="urn:xmpp:read"/></message>
+
+<presence type='away' from='nik2@localhost/telnet' to='nik1@localhost'/>
+
+<presence from='nik2@localhost/telent' to='nik2@localhost/telnet' type='unavailable'/>
+
+<presence from='nik2@localhost/telnet' to='nik2@localhost/telnet' type='unavailable'/>
+
+<presence from='nik2@localhost/telnet' type='unavailable' to='nik2@localhost/telnet'/>
+
+
+<"<presence from='365@52.74.132.72/865800024481233' to='1973@52.74.132.72/355004059055593' type='error'><status>Replaced by new connection</status><error code='503' type='cancel'><service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></presence>"
+
+<"<presence from='2424@52.74.132.72/865645022949602' to='2424@52.74.132.72/355490062197292' type='unavailable'><status>Replaced by new connection</status></presence>"
+
+<presence from='1400@52.74.132.72/911380455292015' to='477@52.74.132.72/867290025721829' xml:lang='en' id='iaBqR-9'><show>away</show><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.igniterealtime.org/projects/smack' ver='NfJ3flI83zSdUDzCEICtbypursw='/><delay xmlns='urn:xmpp:delay' from='1400@52.74.132.72/911380455292015' stamp='2015-09-23T13:16:40.730Z'/><x xmlns='jabber:x:delay' from='1400@52.74.132.72/911380455292015' stamp='20150923T13:16:40'/></presence>
+
+
+
+<iq xmlns='jabber:client'
+    from='nik2@localhost/telnet'
+    id='info1'
+    to='localhost'
+    type='get'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+  </iq>
+
+  <iq xmlns='jabber:client'
+    from='nik2@localhost/telnet'
+    id='enable1'
+    type='set'>
+  <enable xmlns='urn:xmpp:carbons:2'/>
+</iq>
+
+<iq type='get' to='localhost' from='nik2@localhost/telnet' id='id_1'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+
+<message to='localhost' from='nik2@localhost/telnet' type='chat' id='some-1'>
+   <addresses xmlns='http://jabber.org/protocol/address'>
+     <address type='to'  jid='nik1@localhost/telent'/>
+     <address type='to'  jid='241@localhost/telnet'/>
+   </addresses>
+   <body>{"Hello, World! again again and again"}</body>
+</message>
+
+
+*** Announcemnet
+<iq from='nik2@localhost/telnet'
+    id='announce-1'
+    to='localhost'
+    type='set'
+    xml:lang='en'>
+  <command xmlns='http://jabber.org/protocol/commands' 
+           action='execute'
+           node='http://jabber.org/protocol/admin#announce'/>
+</iq>
+
+<iq from='nik2@localhost/telnet'
+    id='announce-2'
+    to='localhost'
+    type='set'
+    xml:lang='en'>
+  <command xmlns='http://jabber.org/protocol/commands' 
+           node='http://jabber.org/protocol/admin#announce'
+           sessionid='2015-10-01T20:21:39.381171Z'>
+    <x xmlns='jabber:x:data' type='submit'>
+      <field type='hidden' var='FORM_TYPE'>
+        <value>http://jabber.org/protocol/admin</value>
+      </field>
+      <field var='announcement'>
+        <value>Attention! This service will be going down for</value>
+        <value>maintenance in 2 minutes. Please log off now!</value>
+        <value>We apologize for the inconvenience.</value>
+      </field>
+    </x>
+  </command>
+</iq>
+
+
+
+
+
+<iq type='get'
+    to='localhost'
+    from='nik2@localhost/telnet'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+<iq type='get'
+    to='localhost'
+    from='nik2@localhost/telnet'>
+  <query xmlns='http://jabber.org/protocol/disco#items'
+         node='http://jabber.org/protocol/commands'/>
+</iq>
+
+
+

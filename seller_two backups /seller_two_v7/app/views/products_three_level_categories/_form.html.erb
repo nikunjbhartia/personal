@@ -1,0 +1,10 @@
+<%= simple_form_for @products_three_level_category, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :product_id %>
+  <%= error_span(@products_three_level_category[:product_id]) %>
+  <%= f.input :third_level_id %>
+  <%= error_span(@products_three_level_category[:third_level_id]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                products_three_level_categories_path, :class => 'btn btn-default' %>
+<% end %>

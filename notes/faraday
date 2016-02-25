@@ -1,0 +1,50 @@
+require 'faraday'
+
+
+GET:-
+conn = Faraday.new 'http://captcha.quikr.com/cg_js/ajaxCity.php?r=0.6747898619310855' do |builder|
+  builder.use FaradayMiddleware::OAuth2, 'TOKEN'
+  builder.use FaradayMiddleware::EncodeJson
+
+  builder.use FaradayMiddleware::ParseXml,  :content_type => /\bxml$/
+  builder.use FaradayMiddleware::ParseJson, :content_type => /\bjson$/
+
+  builder.use FaradayMiddleware::Instrumentation
+  builder.adapter Faraday.default_adapter
+end
+
+cities=conn.get
+
+
+
+Post:
+conn = Faraday.new(:url => 'http://www.quikr.com') do |faraday|
+  faraday.request  :url_encoded             # form-encode POST params
+  faraday.response :logger                  # log requests to STDOUT
+  faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+end
+
+response=conn.post '/post-classifieds-ads/?aj=1&aj_getLocality=true', { :cityname => 'Kolkata' }
+
+http://captcha.quikr.com/cg_js/ajaxCity.php?r=0.6747898619310855
+http://www.quikr.com/post-classifieds-ads/?postadcategoryid=1388
+
+
+ def f(array)
+  a={}
+  (0..190).each do |i|
+      a[i]=array[i]["title"]
+    end
+  a
+  end
+
+
+ file=File.open("myfile.txt",'w')
+ file.puts response
+
+
+open('here', 'a') { |f|
+  f << "Four score\n"
+  f << "and seven\n"
+  f << "years ago\n"
+}

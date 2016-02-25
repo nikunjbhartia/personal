@@ -1,0 +1,2 @@
+cat chat_push_retry_log | grep -i 'failed' |  while read line; do  cur=$(echo $line java | cut -d ' ' -f1); a=$(expr $a + $cur); cur=$(echo $line java | cut -d ' ' -f4); b=$(expr $b + $cur);echo $a $b; done
+

@@ -1,0 +1,24 @@
+1> erlang:module_loaded(md).
+false
+2> l(md).
+{module,md}
+3> erlang:module_loaded(md).
+true
+4> md:module_info().
+[{exports,[{same,1},
+           {double,1},
+           {module_info,0},
+           {module_info,1}]},
+ {imports,[]},
+ {attributes,[{vsn,[205824271517095806442935620583334286333]},
+              {author,"Vasileios Trigonakis"},
+              {date,[{2011,3,13}]}]},
+ {compile,[{options,[{cwd,"~/Documents/playing/erlang/post_modules"},
+                     {outdir,"~/Documents/playing/erlang/post_modules"}]},
+           {version,"4.6.4"},
+           {time,{2011,3,14,7,54,12}},
+           {source,"~/Documents/playing/erlang/post_modules/md.erl"}]}]
+5> md:module_info(attributes).  
+[{vsn,[205824271517095806442935620583334286333]},
+ {author,"Vasileios Trigonakis"},
+ {date,[{2011,3,13}]}]

@@ -1,0 +1,8 @@
+reach_item: "h4:nth-child(1) > a:nth-child(1)"
+name: ".heading-title"
+desc: "#tab-description" 
+mrp: ""
+price:
+ - "li.price-new"
+ - ".product-price"
+images: "#image"

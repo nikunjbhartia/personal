@@ -1,0 +1,13 @@
+ => ["title title", "Test Test Test", "Laughing Duck", "Iphone 5s Ggg", "tiitle title", "Dell Laptop Blackncndndndndndndndndndndn", "Test Dev Laptop", "Nexus 5 Black", "Water bottle", "Bottel water green", "Whatsapp whatsapp", "Laptop Sony Black Color", "Test Listing manual", "Satya Satya Satya", "Nokia Lumia For Sale", "hhhhg hhhh bh", "hhhhj ghg ", "bottle test app", "hhhbbgdfcvvvg", "Test Phone Test", "basic phone test", "Yfdtstyxcyyhf", "basic phone ankur test phone test office", "sample image"] 
+2.2.1 :121 > b
+ => ["title title", "Laughing Duck", "Dell Laptop Blackncndndndndndndndndndndn", "Test Test Test", "Test Dev Laptop", "Nexus 5 Black", "Iphone 5s Ggg", "tiitle title", "hhhbbgdfcvvvg", "Test Phone Test", "Yfdtstyxcyyhf", "sample image", "Water bottle", "Laptop Sony Black Color", "Nokia Lumia For Sale", "basic phone test", "Bottel water green", "Satya Satya Satya", "hhhhg hhhh bh", "bottle test app", "basic phone ankur test phone test office", "Whatsapp whatsapp", "Test Listing manual", "hhhhj ghg "] 
+2.2.1 :122 > a & b == a
+ => true 
+2.2.1 :123 > a & b == b
+ => false 
+
+
+
+
+
+a & b == a  will return true is both arrays are same 

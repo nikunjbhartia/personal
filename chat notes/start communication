@@ -1,0 +1,47 @@
+aliases
+alias kfct='./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic $topic'
+alias kfd='cd ~/kafka'
+alias kflt='./bin/kafka-topics.sh --list --zookeeper localhost:2181'
+alias kfsc='./bin/kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic $topic'
+alias kfsp='./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic $topic'
+alias kfss='./bin/kafka-server-start.sh config/server.properties'
+
+
+1) start zookeeper  :  
+  go to kafka directory : kfd
+  start zookeeper with the required properties usage file : ./bin/zookeeper-server-start.sh config/zookeeper.properties 
+
+2) start kafka server :
+   kfd
+   kfss
+
+3) start telnet  : telnet localhost 5222
+    start stream : send stream xml in the notes :
+  <stream:stream
+    to='localhost'
+    xmlns='jabber:client'
+    xmlns:stream='http://etherx.jabber.org/streams'>
+
+4) login user :
+
+   <iq id='A2' type='set'>
+   <query xmlns='jabber:iq:auth'>
+    <username>nik1</username>
+    <resource>telnet</resource>
+    <password>123</password>
+   </query>
+   </iq><presence/>
+
+
+5) send message :
+  
+  <message to='nik2@localhost' id='A33sjdks' from='nik1@localhost/telnet' type='chat'>
+ <body>{"message":"SGk=","message_id":"92233b564-f245-43a3-e50f-710ba319aa9c","actor_id":"2021","message_date":"2015-08-21 16:27:26","type":1,"target_id":"236","product_id":"123"}</body>
+ <version>5</version>
+  <request xmlns='urn:xmpp:receipts'/>
+</message>
+
+
+
+6) NOTE : In order to find the last seen of a user , the target user has to be in the roster list of the sender.
+

@@ -1,0 +1,15 @@
+1)validation index.html.erb 
+ Added correct path to the new button of the category listing page
+
+2)validation_controller 
+ @result.nil? changed to rsult.blank? to handle the correct case.
+
+3)# config/application.rb
+  config.exceptions_app = self.routes
+
+4)# config/routes.rb
+get "/404", :to => "errors#not_found"
+get "/422", :to => "errors#unacceptable"
+get "/500", :to => "errors#internal_error"
+
+5)errors_controller and respective views added

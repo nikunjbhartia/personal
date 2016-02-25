@@ -1,0 +1,30 @@
+ ** Deploy Chats **
+
+1)build the clients that the chat subsystem deppends on  -- accountclient and Chat client
+   -- this will create a jar file for the dependencies.
+   -- we do it by mvn clean install
+
+2)Now build chat 
+   -- we will get a war file names ROOT.war which will have the jar files for all the dependent client systems.
+
+3)scp the war file in the server in the required folder
+
+
+ ** The same way we deploy rest fo the 6 subsystems -- search , chats , offers , notifications , gateway , android , ios  
+
+ If we are using accountsClient , then we have to build the account subsystem first 
+
+ In order to build the project , dont forget to add external folder containing properties for the project in the classpath ( run as --> run as configuration -> claass path -->advanced -->add external folders ( kept in /opt/configuration folder )
+
+ All the tomcat servers , ejabberd servers , zookeeper servers are in the shopoweb server.
+
+In order to check the logs, we have to ssh it to the required server.
+
+
+
+
+=================
+for clients : mvn clean package  -->creates jar files
+         mvn install  --> pushes jar files to  ls ~/.m2/repository/com/snapdeal/treasure/
+
+for non clients : mvn clean package  --> creates war file ( depending on the <packaging> tag set in their corressponding pom.xml file )

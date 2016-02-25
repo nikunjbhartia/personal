@@ -1,0 +1,22 @@
+1) clone the repo for the require otp ( in our case 17.5 .. erts-6.4)
+    or download the source code and unzip the files to a folder
+
+ 2) Go to the folder
+
+3) export ERL_TOP=`pwd`   [ saves current path to a variable ]
+
+4) ./otp_build autoconf   [generate the config scripts ] 
+
+5) ./configure
+
+6) make  [ builing the otp version ]
+
+7) make install    [ installing the build ]
+
+8)export PATH=$ERL_TOP/bin:$PATH  
+ [setting the path variable , this is the most crucial step whcih enables erl run on the terminal from anywhere, also enables erlc and other included scripts] 
+
+
+DONE.NOW check which erl.
+It should point to the unziped directory path .
+
